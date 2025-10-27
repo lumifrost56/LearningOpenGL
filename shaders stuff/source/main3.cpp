@@ -45,7 +45,7 @@ int main() {
     }
     glViewport(0, 0, 800, 600);
     // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    Shader ourShader("3.3.shader.vs", "3.3.shader.fs");
+    Shader ourShader("shader.vrs", "shader.frs");
     unsigned int VBO, EBO, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &EBO);
@@ -74,4 +74,5 @@ int main() {
     glDeleteBuffers(1, &EBO);
     glfwTerminate();
     return 0;
+
 }
